@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <spring:url var="css" value="/resources/css"></spring:url>
 <spring:url var="js" value="/resources/js"></spring:url>
@@ -47,6 +46,10 @@
 
 			<c:if test="${userClickContact==true }">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			
+				<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true }">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 			<!-- Footer -->
