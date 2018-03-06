@@ -10,7 +10,7 @@
 	<!-- Version information will be stored here -->
 	<properties>
 		<javaee.version>7.0</javaee.version>
-		<spring.version>4.3.6.RELEASE</spring.version>
+		<spring.version>5.0.4.RELEASE</spring.version>
 		<spring.security.version>4.2.2.RELEASE</spring.security.version>
 
 	</properties>
@@ -21,7 +21,12 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-	<!-- 	linking with backend project -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>5.0.4.RELEASE</version>
+		</dependency>
+		<!-- linking with backend project -->
 		<dependency>
 			<groupId>com.online</groupId>
 			<artifactId>onlinemarketbackend</artifactId>
@@ -54,6 +59,7 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
