@@ -7,9 +7,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" id="home">
-              <a class="nav-link " href="${contextRoot}/homepage">Home
+              <a class="nav-link " href="${contextRoot}/homepage">Home</a>
                 <!-- <span class="sr-only">(current)</span> -->
-              </a>
             </li>
             <li class="nav-item" id="about">
               <a class="nav-link" href="${contextRoot}/about">About</a>
