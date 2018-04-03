@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <spring:url var="css" value="/resources/css"></spring:url>
 <spring:url var="js" value="/resources/js"></spring:url>
 <spring:url var="images" value="/resources/images"></spring:url>
@@ -20,12 +21,14 @@
 <title>Online Market - ${title}</title>
 <script>
 	window.menu = '${title}';
+	window.contextRoot = '${contextRoot}';
 </script>
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/shophomepage.css" rel="stylesheet">
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 <%-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"> --%>
 
 </head>
@@ -50,15 +53,22 @@
 			
 				<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true }">
 				<%@include file="listProducts.jsp"%>
-			</c:if>
+			     </c:if>
+			     
+			     <c:if test="${userClickShowProduct==true}">
+				<%@include file="showSingleProduct.jsp"%>
+			     </c:if>
 
 			<!-- Footer -->
 			<%@include file="./comman/footer.jsp"%>
 		</div>
 		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/jquery.min.js"></script>
+		<script src="${js}/jquery.dataTables.js"></script>
 		<script src="${js}/bootstrap.bundle.min.js"></script>
-		<script src="${js}/myapp.js"></script>
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		<script src="${js}/myapps.js"></script>
+		<script src="${js}/customizedTableApi.js"></script>
 	</div>
 </body>
 
