@@ -1,7 +1,7 @@
-<div class="container">
-<h3>Contact Us</h3>
+<div class="container" style="background-color:#bfcec7;padding: 15px;">
+<h3 style="background-color:#7a8590">Contact Us</h3>
 
-<div class="container">
+<div class="container" style="background-color: #f2f2f2;padding: 20px;">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">

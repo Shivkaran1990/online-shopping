@@ -28,8 +28,16 @@
 
 <!-- Custom styles for this template -->
 <link href="${css}/shophomepage.css" rel="stylesheet">
+<link href="${css}/adminpage.css" rel="stylesheet">
 <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 <%-- <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"> --%>
+
+	<script src="${js}/jquery.min.js"></script>
+		<script src="${js}/jquery.dataTables.js"></script>
+		<script src="${js}/bootstrap.bundle.min.js"></script>
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		<script src="${js}/myapps.js"></script>
+		<script src="${js}/customizedTableApi.js"></script>
 
 </head>
 
@@ -58,17 +66,16 @@
 			     <c:if test="${userClickShowProduct==true}">
 				<%@include file="showSingleProduct.jsp"%>
 			     </c:if>
+			     
+			     <c:if test="${userClickedManageProduct==true}">
+				  <%@include file="manageProducts.jsp"%>
+			     </c:if>
 
 			<!-- Footer -->
 			<%@include file="./comman/footer.jsp"%>
 		</div>
 		<!-- Bootstrap core JavaScript -->
-		<script src="${js}/jquery.min.js"></script>
-		<script src="${js}/jquery.dataTables.js"></script>
-		<script src="${js}/bootstrap.bundle.min.js"></script>
-		<script src="${js}/dataTables.bootstrap.js"></script>
-		<script src="${js}/myapps.js"></script>
-		<script src="${js}/customizedTableApi.js"></script>
+	
 	</div>
 </body>
 

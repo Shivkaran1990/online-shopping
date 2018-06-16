@@ -13,7 +13,7 @@ public class ProductTestCase {
 
 	private static AnnotationConfigApplicationContext context;
 	
-	
+/*	
 	private static ProductDAO productDAO;
 	
 	
@@ -28,7 +28,7 @@ public class ProductTestCase {
 		productDAO = (ProductDAO)context.getBean("productDAO");
 	}
 	
-	/*@Test
+	@Test
 	public void testCRUDProduct() {
 		
 		// create operation
@@ -59,7 +59,7 @@ public class ProductTestCase {
 		assertEquals("Something went wrong while fetching the list of products!",
 				6,productDAO.list().size());		
 				
-	}*/
+	}
 		
 
 	@Test
@@ -83,7 +83,7 @@ public class ProductTestCase {
 				3,productDAO.getLatestActiveProducts(3).size());
 		
 	} 
-	
+	*/
 	
 	
 		

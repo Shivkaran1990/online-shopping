@@ -15,6 +15,9 @@ $(function() {
 	case'Home':
 		$('#home').addClass('active');
 		break;
+	case'Manage Products':
+		$('#manageProduct').addClass('active');
+		break;
 		
 	default:
 		$('#listofproduct').addClass('active');
@@ -44,8 +47,6 @@ $(function() {
 		$.ajax({url: jsonUrl, success: function(data){
 			createProductTable(data);
         }});
-	
-	
 	 }
 
 	

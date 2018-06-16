@@ -13,7 +13,7 @@ public class CategoryTestCase {
 private static AnnotationConfigApplicationContext context;
 	
 	
-	private static CategoryDAO categoryDAO;
+	/*private static CategoryDAO categoryDAO;
 	
 	
 	private Category category;
@@ -27,7 +27,7 @@ private static AnnotationConfigApplicationContext context;
 		context.refresh();
 		categoryDAO = (CategoryDAO)context.getBean("categoryDAO");
 	}
-	/*@Test
+	@Test
 	public void testAddCategory() {	
 		category = new Category();		
 		category.setName("Laptop");
@@ -35,28 +35,28 @@ private static AnnotationConfigApplicationContext context;
 		category.setImageURL("CAT_3.png");
 		category.setActive(true);
 		assertEquals("Successfully added a category inside the table!",true,categoryDAO.add(category));
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	public void testGetCategory() {	
 		category = categoryDAO.get(1);
 		assertEquals("Successfully fatched a category inside the table!",1,category.getId());
-	}*/
-	/*@Test
+	}
+	@Test
 	public void testUpdateCategory() {	
 		category = categoryDAO.get(5);
 		category.setImageURL("CAT_5.png");		
 		assertEquals("Successfully fatched a category inside the table!",true,categoryDAO.update(category));
-	}*/
-/*	@Test
+	}
+	@Test
 	public void testDeleteCategory() {	
 		category = categoryDAO.get(2);
 		category.setActive(false);
 		assertEquals("Successfully fatched a category inside the table!",true,categoryDAO.update(category));
-	}*/
+	}
 	@Test
 	public void testListCategory() {	
 		assertEquals("Successfully fatched a category List",4,categoryDAO.list().size());
 	}
-
+*/
 }

@@ -71,6 +71,13 @@
 			<version>${hibernate.version}</version>
 		</dependency>
 		
+			
+		<!-- Hibernate Validator -->
+		<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>5.2.4.Final</version>
+</dependency>
 		
 		<!-- Database Connection Pooling -->
 		<dependency>
@@ -111,13 +118,7 @@
 			<artifactId>jcl-over-slf4j</artifactId>
 			<version>1.7.24</version>
 		</dependency>
-		
-		<!-- Hibernate Validator -->
-		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-validator</artifactId>
-		    <version>5.4.1.Final</version>
-		</dependency>
+	
 			
 		<dependency>
 			<groupId>javax.validation</groupId>
